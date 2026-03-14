@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals – Jared Rezabala</title>
     <meta name="description" content="Jared's WDD131 landing page">
     <meta name="author" content="Jared Rezabala">
+    <link rel="stylesheet" href="./styles/base.css">
 </head>
+
 <body>
     <header>
         <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
-        <nav>
+        <nav id="nav_menu">
+            <a href="/">Home</a>
             <a href="https://www.linkedin.com/in/jared-rezabala/">LinkedIn</a>
             <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng#:~:text=41%20And%20moreover,hath%20spoken%20it.">Scripture</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng#:~:text=41%20And%20moreover,hath%20spoken%20it.">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
-    <main>
+    <main class="main_grid">
         <h1>Jared Rezabala</h1>
-        <section class="card"></section>
-        <section class="card"></section>
+        <section class="card">
+            <div class="card_headers">
+                <h2>About me</h2>
+            </div>
+            <div class="about_block">
+                <div class="image_container"><img src="./images/profile_picture.jpeg"
+                        alt="Jared Rezabala profile picture">
+                </div>
+                <p>I am Jared Rezabala, a 25-year-old software development student from Ecuador. I study Software
+                    Development online at BYU–Idaho, where I previously earned a certificate in Web and Computer
+                    Programming. I currently work as a Solution and Configuration Architect at Graphite, where I design
+                    and
+                    maintain configurations that support client implementations and manage data flows within the
+                    platform.<br><br>I enjoy building web applications and tools while continuing to grow my skills in
+                    technologies like JavaScript, Node.js, React, and TypeScript. I’m passionate about learning,
+                    creating
+                    personal projects, and becoming a skilled and ethical professional in the tech industry.</p>
+
+            </div>
+            <div class="section_divider">
+                <span class="section_title">My Home Land</span>
+                <hr>
+            </div>
+            <div class="about_block reverse">
+                <div class="image_container">
+                    <img src="./images/flag_of_Ecuador.png" alt="Ecuador flag">
+                    <span id="flag_description">Official Flag of Ecuador</span>
+                </div>
+
+                <p>
+                    Ecuador is a country located in northwestern South America, bordered by Colombia to the north
+                    and
+                    Peru
+                    to the east and south, with the Pacific Ocean to the west. It gained independence from Spain in
+                    1822
+                    after the Battle of Pichincha. The country is known for its rich cultural heritage, diverse
+                    geography—including the Andes Mountains, the Amazon rainforest, and the Galápagos Islands—and
+                    for
+                    being
+                    named after the equator, which runs through its territory.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card_headers">
+                <h2>WDD-131 Assignments</h2>
+            </div>
+            <ul>
+                <li><a href="#">Week2</a></li>
+                <li><a href="#">Week3</a></li>
+                <li><a href="#">Week4</a></li>
+                <li><a href="#">Week5</a></li>
+                <li><a href="#">Week6</a></li>
+                <li><a href="#">Week7</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>
@@ -31,4 +90,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
