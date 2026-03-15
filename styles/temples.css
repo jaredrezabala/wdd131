@@ -1,3 +1,4 @@
+/* temples.css - Mobile View (default) */
 body {
     max-width: 700px;
     margin: 0;
@@ -13,6 +14,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+
+.header_text {
+    font-size: 2rem;
+    color: white;
+    font-family: "Arimo", sans-serif;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.hamburger-menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
 .nav-menu {
@@ -32,25 +49,13 @@ header {
     text-align: center;
     font-family: "Arimo", sans-serif;
 }
-.nav-menu a:hover{
+
+.nav-menu a:hover {
     text-decoration: underline;
-}
-.hamburger-menu {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: white;
 }
 
 .nav-menu.open {
     display: flex;
-}
-
-.header_text {
-    font-size: 2rem;
-    color: white;
-    font-family: "Arimo", sans-serif;
 }
 
 h1 {
@@ -61,8 +66,8 @@ h1 {
 .temples-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
     gap: 1rem;
+    align-items: center;
 }
 
 .temples-gallery figure {
@@ -74,9 +79,5 @@ footer {
     text-align: center;
     background-color: #2c3e50;
     padding: 1rem;
-}
-footer p {
     color: white;
-    margin-top: 15px;
-    font-family: "Arimo", sans-serif;
 }
